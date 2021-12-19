@@ -7,6 +7,7 @@ public class MainClass {
 	public static void main(String[] args) throws CloneNotSupportedException {
 
 		Date date= new Date(9423423);
+		System.out.println(date);
 		Employee e = new Employee(1, "Test");
 		Employee obj = (Employee) e.clone();
 		System.out.println("Original : " + e.hashCode() +" Clonned : "+ obj.hashCode());
