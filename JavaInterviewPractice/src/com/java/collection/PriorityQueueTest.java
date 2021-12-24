@@ -1,5 +1,6 @@
 package com.java.collection;
 
+import java.util.Iterator;
 import java.util.PriorityQueue;
 
 import com.java.Employee;
@@ -28,6 +29,12 @@ public class PriorityQueueTest {
 		pq.offer(new Employee(2, "Z", 700));
 		pq.offer(new Employee(5, "K", 600));
 		pq.offer(new Employee(4, "E", 100));
+		
+//		Iterator<Employee> itr = pq.iterator();
+//		while(itr.hasNext()){
+//			Employee e = itr.next();
+//			pq.offer(new Employee(5, "F", 150));		// fail-fast
+//		}
 		
 		System.out.println(pq);
 		System.out.println(pq.poll());
