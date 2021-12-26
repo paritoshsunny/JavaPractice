@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class SyncArrayList {
+public class CopyOnWriteArrayListTest {
 	
 	public static void main(String[] args) {
 		List<Integer> list = new CopyOnWriteArrayList<>(new Integer[] {1,3,2,5,4});
