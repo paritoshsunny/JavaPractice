@@ -3,6 +3,7 @@ package com.java.collection;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 
+import com.java.Address;
 import com.java.Employee;
 
 public class PriorityQueueTest {
@@ -24,11 +25,11 @@ public class PriorityQueueTest {
 //		System.out.println(pq.poll());
 		MyComparator compare=new MyComparator();
 		PriorityQueue<Employee> pq = new PriorityQueue<>(compare);
-		pq.offer(new Employee(1, "A", 900));
-		pq.offer(new Employee(3, "C", 400));
-		pq.offer(new Employee(2, "Z", 700));
-		pq.offer(new Employee(5, "K", 600));
-		pq.offer(new Employee(4, "E", 100));
+		pq.offer(new Employee(1, "A", 900, new Address(101, "abc", "pqr", "xyz")));
+		pq.offer(new Employee(3, "C", 400, new Address(101, "abc", "pqr", "xyz")));
+		pq.offer(new Employee(2, "Z", 700, new Address(101, "abc", "pqr", "xyz")));
+		pq.offer(new Employee(5, "K", 600, new Address(101, "abc", "pqr", "xyz")));
+		pq.offer(new Employee(4, "E", 100, new Address(101, "abc", "pqr", "xyz")));
 		
 //		Iterator<Employee> itr = pq.iterator();
 //		while(itr.hasNext()){
