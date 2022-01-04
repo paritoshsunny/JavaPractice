@@ -3,7 +3,7 @@ package com.java.collection;
 import java.util.HashMap;
 import java.util.TreeMap;
 
-public class Test {
+public class MyThread {
 	
 	@Override
 	public int hashCode() {
